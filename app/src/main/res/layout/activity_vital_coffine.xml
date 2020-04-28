@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medicationback3faded"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        android:id="@id/toolbar"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:weightSum="2"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:text="@string/date"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/activity_vital_coffine_et_date"-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:focusable="false"-->
+                <!--android:hint="@string/select_date"-->
+                <!--android:background="@drawable/drawable_white_corner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_35sdp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:text="@string/time"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/activity_vital_coffin_et_time"-->
+                <!--android:text="@string/select_time"-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:focusable="false"-->
+                <!--android:background="@drawable/drawable_white_corner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_35sdp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:weightSum="2"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:text="@string/coffine"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/activity_vital_burn_calories_et_calories"-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:inputType="number"-->
+                <!--android:background="@drawable/drawable_white_corner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_35sdp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:text="@string/diastolic"-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/activity_vital_coffine_et_unit"-->
+                <!--android:focusable="false"-->
+                <!--android:padding="@dimen/_5sdp"-->
+                <!--android:text="@string/kilogram"-->
+                <!--android:background="@drawable/drawable_white_corner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_35sdp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/activity_vital_coffine_btnsave"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/save"-->
+            <!--android:background="@drawable/drawable_white_corner"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+
+        >
+
+
+        <!--<ScrollView-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="@dimen/_10sdp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="20dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/rounded_layout"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/calendra1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textSize="30sp"
+                            android:id="@+id/act_add_reminder_tv_name"
+                            android:textColor="#000"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/activity_vital_coffine_et_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:background="@drawable/rounded_editext"
+                        android:paddingBottom="15dp"
+                        android:textColor="#000"
+                        android:focusable="false"
+                        android:hint="Select Date"
+
+                        android:textColorHint="@color/black"
+                        android:padding="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="15dp"
+                    android:background="#e6e2e2"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/rounded_layout"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/coffeine"/>
+                        <TextView
+                            android:id="@+id/act_add_reminder_tv_for"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Caffeine"
+                            android:textSize="30sp"
+                            android:textColor="#000"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/activity_vital_burn_calories_et_calories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:background="@drawable/rounded_editext"
+                        android:paddingBottom="15dp"
+                        android:inputType="number"
+
+                        android:textColorHint="#000"
+                        android:textColor="#000"
+                        android:padding="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#e6e2e2"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/rounded_layout"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/investime"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textSize="30sp"
+                            android:textColor="#000"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+                    <EditText
+                    android:id="@+id/activity_vital_coffin_et_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:background="@drawable/rounded_editext"
+                        android:paddingBottom="15dp"
+                        android:focusable="false"
+android:hint="Select Time"
+                        android:textColorHint="@color/black"
+                        android:textColor="#000"
+                        android:padding="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e2e2"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/rounded_layout"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/detailsmore"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Diastolic"
+                            android:textSize="30sp"
+                            android:textColor="#000"
+                            android:layout_marginLeft="20dp"/>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/activity_vital_coffine_et_unit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_editext"
+                        android:focusable="false"
+                        android:hint="KCal"
+
+                        android:textColorHint="@color/black"
+                        android:textColor="#000"
+                        android:padding="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="60dp"
+                        android:paddingBottom="15dp" />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e6e2e2"
+                    android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+        <Button
+
+
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_5sdp"
+
+            android:background="@drawable/rounded_button"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="@string/save"
+            android:id="@+id/activity_vital_coffine_btnsave"
+            android:textSize="30dp" />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

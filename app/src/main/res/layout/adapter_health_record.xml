@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="@dimen/_15sdp"
+    android:gravity="center"
+    android:layout_height="180dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="30dp"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_editext"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/adapter_health_record_imgprofile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_user" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_weight="3"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:paddingLeft="10dp"
+                android:padding="20dp"
+                android:text="ANIL YADAV"
+                android:ellipsize="end"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:maxLines="1"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:id="@+id/adapter_health_record_txtname"
+
+                />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:paddingLeft="7dp"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:text="  Edit"
+            android:maxLines="1"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/adapter_health_record_txtname1"
+
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

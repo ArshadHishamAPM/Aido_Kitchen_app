@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#59bef5"
+    android:focusableInTouchMode="true"
+    android:focusable="true">\
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layer">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/new_background"
+        android:layout_below="@+id/toolbar"
+        >
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/rounded_layout"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="6dp"
+                                android:src="@drawable/nameuser"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/add_medicinname"
+                                android:layout_marginTop="5dp"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_update_medications_ettxtname"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="60dp"
+                            android:background="@drawable/rounded_editext"
+                            android:paddingBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="10dp"
+                            android:textColor="#000"
+                            android:layout_marginTop="5dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/rounded_layout"
+                        android:orientation="vertical"
+                        android:layout_marginTop="15dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="6dp"
+                                android:src="@drawable/dropmedi"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Type"
+                                android:layout_marginTop="5dp"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+
+                        <EditText
+                            android:id="@+id/activity_update_medications_et_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textColor="#000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="60dp"
+                            android:padding="10dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="20dp"
+                            android:spinnerMode="dialog"
+                            android:background="@drawable/rounded_editext"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_layout"
+                        android:layout_marginTop="15dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="5dp"
+                                android:src="@drawable/newroute"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Route"
+                                android:layout_marginTop="5dp"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_update_medications_et_route"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:textColor="#000"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="60dp"
+                            android:paddingBottom="20dp"
+                            android:spinnerMode="dialog"
+                            android:padding="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/rounded_editext"/>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_layout"
+                        android:layout_marginTop="15dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="6dp"
+                                android:src="@drawable/medidouse"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dosage"
+                                android:layout_marginRight="10dp"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_update_medications_et_dosage"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#000"
+                            android:paddingBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="10dp"
+                            android:layout_marginLeft="60dp"
+                            android:background="@drawable/rounded_editext"
+                            android:focusable="false"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_layout"
+                        android:layout_marginTop="15sp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="6dp"
+                                android:src="@drawable/mediinstruction"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Instruction"
+                                android:layout_marginTop="10dp"
+                                android:textSize="25sp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_update_medications_et_Instruction"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="#000"
+                            android:paddingBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="60dp"
+                            android:padding="10dp"
+                            android:background="@drawable/rounded_editext"
+                            android:focusable="false"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/rounded_layout"
+                        android:layout_marginTop="15dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="6dp"
+                                android:src="@drawable/reasontalk"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Reason"
+                                android:textSize="25sp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_update_medications_edittxt_resonfortalking"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/rounded_editext"
+                            android:layout_marginRight="5dp"
+                            android:textColor="#000"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="60dp"
+                            android:paddingBottom="15dp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_layout"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/yearmedi"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Period"
+                                    android:textSize="25sp"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="20dp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <!--<ImageView-->
+                                    <!--android:layout_width="40dp"-->
+                                    <!--android:layout_height="40dp"-->
+                                    <!--android:src="@drawable/calender"-->
+                                    <!--android:id="@+id/imageView3"-->
+                                    <!--android:layout_weight="1" />-->
+
+                                <EditText
+                                    android:id="@+id/activity_update_medications_edttxt_duratin_hours"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:textSize="20sp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+
+
+
+                                    android:layout_marginLeft="30dp"
+                                    android:hint="no of days"
+                                    android:textColorHint="#000"
+                                    android:background="@drawable/rounded_editext"
+                                    android:textColor="#000"
+
+
+                                    android:inputType="number"
+                                    android:layout_marginStart="30dp"
+                                    />
+
+
+
+                                <EditText
+                                android:id="@+id/activity_update_medications_et_duratin_days"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+
+                                    android:layout_weight="1"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="30dp"
+
+                                    android:gravity="center"
+
+                                    android:spinnerMode="dialog"
+                                    android:background="@drawable/rounded_editext"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginRight="10dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_layout"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:src="@drawable/startmedi"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/startdate"
+                                    android:textSize="25sp"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"/>
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/activity_update_medications_edttxt_startdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_editext"
+                                android:textColor="#000"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="10dp"
+
+                                android:focusable="false"
+                                android:paddingBottom="15dp"  />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_layout"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@drawable/endmedi"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/enddate"
+                                    android:textSize="25sp"
+                                    android:textColor="#000"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="20dp"/>
+                            </LinearLayout>
+
+
+                            <EditText
+                                android:id="@+id/activity_update_medications_edttxt_enddate"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_editext"
+                                android:focusable="false"
+                                android:textColor="#000"
+                                android:padding="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingBottom="15dp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_layout"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@drawable/meditotal"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/totalquantity"
+                                    android:textSize="25sp"
+                                    android:layout_marginTop="10dp"
+                                    android:textColor="#000"
+                                    android:layout_marginLeft="20dp"/>
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/activity_update_medications_edttxt_totalquantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@drawable/rounded_editext"
+                                android:inputType="number"
+                                android:textColor="#000"
+                                android:padding="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingBottom="15dp"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/rounded_layout"
+                            android:orientation="vertical"
+                            android:layout_marginTop="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:src="@drawable/prescmedi"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/prescribeby"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="25sp"
+                                    android:layout_marginLeft="20dp"
+                                    android:textColor="#000"/>
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/activity_update_medications_edttxt_prescribe_by"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+
+                                android:background="@drawable/rounded_editext"
+                                android:textColor="#000"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="60dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="10dp"
+                                android:paddingBottom="15dp" />
+
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e6e2e2"/>
+                        <!--android:background="@drawable/drawable_white_corner"-->
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <!--<ImageView-->
+
+
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_margin="@dimen/_5sdp"-->
+            <!--android:src="@drawable/shaprectangle"-->
+
+            <!--android:gravity="center"-->
+            <!--android:text="@string/save"-->
+            <!--android:textSize="@dimen/_15sdp" />-->
+        <Button
+
+            android:id="@+id/activity_update_medications_btn_update"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fff"
+            android:background="@drawable/shapefillcircle"
+            android:layout_marginBottom="12dp"
+
+
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"
+            android:padding="20dp"
+
+
+            android:gravity="center"
+            android:text="UPDATE"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_below="@+id/toolbar">-->
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:layout_marginBottom="@dimen/_5sdp">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/add_medicinname" />-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:weightSum="2">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/activity_update_medications_ettxtname"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="0.3"-->
+                            <!--android:background="@null"-->
+                            <!--android:padding="@dimen/_10sdp" />-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_gravity="center|center_vertical"-->
+                            <!--android:layout_margin="@dimen/_5sdp"-->
+                            <!--android:layout_weight="1.7"-->
+                            <!--android:background="@drawable/ic_add_medicions"-->
+                            <!--android:visibility="gone" />-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/medicine_type" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_et_type"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_40sdp"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/medicine_route" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_et_route"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_40sdp"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:padding="@dimen/_10sdp"-->
+                        <!--android:spinnerMode="dialog" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/medicine_dosage" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_et_dosage"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_40sdp"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:padding="@dimen/_10sdp"-->
+                        <!--android:spinnerMode="dialog" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/medicine_instn" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_et_Instruction"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_40sdp"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:padding="@dimen/_10sdp"-->
+                        <!--android:spinnerMode="dialog" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/medicine_talking" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_edittxt_resonfortalking"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_3sdp"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="@dimen/_10sdp"-->
+                    <!--android:weightSum="2">-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_edttxt_duratin_hours"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_40sdp"-->
+                        <!--android:layout_marginRight="@dimen/_5sdp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:inputType="number"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_et_duratin_days"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_40sdp"-->
+                        <!--android:layout_marginLeft="@dimen/_5sdp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:gravity="center"-->
+                        <!--android:padding="@dimen/_10sdp"-->
+                        <!--android:spinnerMode="dialog" />-->
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/startdate" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_edttxt_startdate"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/enddate" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_edttxt_enddate"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:focusable="false"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/totalquantity" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_edttxt_totalquantity"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:inputType="number"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="@dimen/_10sdp">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/prescribeby" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_update_medications_edttxt_prescribe_by"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_20sdp"-->
+                        <!--android:background="@drawable/drawable_white_corner"-->
+                        <!--android:padding="@dimen/_10sdp" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_30sdp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="@dimen/_10sdp"-->
+        <!--android:layout_marginLeft="@dimen/_5sdp"-->
+        <!--android:layout_marginRight="@dimen/_5sdp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2">-->
+
+        <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/activity_update_medications_btn_delete"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="@dimen/_30sdp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/drawable_white_corner"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="@string/delete"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="@dimen/_14sdp" />&ndash;&gt;-->
+
+        <!--<Button-->
+            <!--android:id="@+id/activity_update_medications_btn_update"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_30sdp"-->
+
+
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/drawable_white_corner"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/update"-->
+            <!--android:textSize="@dimen/_15sdp" />-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>
+
+</RelativeLayout>

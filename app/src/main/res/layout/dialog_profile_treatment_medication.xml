@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_layout"
+        android:paddingBottom="15dp">
+        <ImageView
+            android:id="@+id/imgad"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+      android:layout_weight="15"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_weight="0.6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_profile_tretatment_tv_title"
+
+            android:layout_marginLeft="10dp"
+            android:text="title "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/dialog_profile_tretatment_tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Description"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+
+
+    </LinearLayout>
+        <!--<ImageView-->
+           <!--android:layout_weight="2"-->
+            <!--android:id="@+id/dialog_profile_treatment_iv_cancel"-->
+
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:src="@drawable/treatmentcancel"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--/>-->
+
+    </LinearLayout>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/dialog_profile_tretatment_tv_description"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/_10sdp"-->
+        <!--android:text="doctor description" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#e6e6e6">
+    <ListView
+        android:id="@+id/dialog_profile_treatment_medication_lv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible"></ListView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Enter New String"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/treatmentedittext"
+        android:padding="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/dialog_profile_treatment_medication_et_new_medication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="enter new string"
+            android:paddingRight="@dimen/_70sdp" />
+    </FrameLayout>
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+
+            >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:background="@color/black"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+
+
+
+            >
+        <TextView
+
+            android:id="@+id/dialog_profile_treatment_medication_btn_send_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:gravity="center"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:text="@string/save"
+            android:textColor="#fff"
+            android:background="@drawable/rounded_button"
+
+
+
+                android:layout_weight="1"
+            />
+            <!--android:id="@+id/dialog_profile_treatment_iv_cancel1"-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                />
+            <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:gravity="center"
+                android:background="@drawable/roundedbutton1"
+                android:padding="5dp"
+                android:text="@string/Cancel"
+                android:textColor="#000"
+                android:id="@+id/dialog_profile_treatment_iv_cancel"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+            <!--android:id="@+id/dialog_profile_treatment_medication_btn_send_list"-->
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

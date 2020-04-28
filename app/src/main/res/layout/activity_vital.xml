@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59bef5"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/new_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" >
+    </include>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_temprature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/rounded_layout"
+
+                android:orientation="vertical">
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+
+                    android:src="@drawable/temparature" />
+                <!--<ImageView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="90dp"-->
+                    <!--android:src="@drawable/temparature"/>-->
+            </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/temprature"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_pulse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/pulse"
+                         />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/pulse"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/pulse"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_blood_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/bloodpressure" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/bloodpressure"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/blood_pressure"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/height" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/height"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/height"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/weight" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/weight"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/weight"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_intake_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/intakecalories" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/intakecalories"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:text="@string/intake_calories"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_burn_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/burncalories" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/burncalories"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:text="@string/burn_calories"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_alcohol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_layout"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/alcohol" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/alcohol"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/alcohol"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_vital_ll_coffine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rounded_layout"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:src="@drawable/coffeine" />
+                    <!--<ImageView-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:src="@drawable/coffeine"/>-->
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Caffeine"
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rathore.health">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/healthicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAWuk6M0qQQqAEsR3UekSYII0mMi-NyBJ8" />
+
+
+        <activity android:name="com.rathore.health.Activity.ActivityHospitalFind" />
+<!--        <activity android:name=".Activity.ActivityHealthRecord" />-->
+        <!--        <activity android:name=".Activity.ActivityDrugInformation" />-->
+        <activity android:name="com.rathore.health.Activity.ActivityHome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--        <activity android:name=".MainActivity" />-->
+
+        <activity
+            android:name="com.rathore.health.Activity.ActivityDrugInformation"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/drug_information"
+            >
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityDrugInformation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.rathore.health.Activity.ActivityAddReminder"
+            android:label="@string/add_reminder">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityAddReminder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+                <activity
+                    android:name="com.rathore.health.Activity.ActivityHealthRecord"
+                    android:label="health_record">
+                    <intent-filter>
+                        <action android:name="com.rathore.newsweathertraffic.Activity.ActivityHealthRecord" />
+
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+                </activity>
+                <activity
+                    android:name="com.rathore.health.Activity.ActivityAddHealthRecord"
+                    android:label="@string/add_health_record">
+                    <intent-filter>
+                        <action android:name="com.rathore.newsweathertraffic.Activity.ActivityHealthRecord" />
+
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+                </activity>
+        <!--        <activity-->
+        <!--            android:name=".Activity.ActivityHospitalFind"-->
+        <!--            android:label="@string/hospital_finder"-->
+
+        <!--            android:windowSoftInputMode="stateHidden">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="com.example.archi.health.Activity.ActivityHospitalFind" />-->
+
+        <!--                <category android:name="android.intent.category.DEFAULT" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+        <activity
+            android:name=".Activity.ActivityAddMedications"
+            android:label="@string/add_medications">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityAddMedications" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rathore.health.Activity.ActivityUpdateReminder"
+            android:label="@string/update_reminder">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityUpdateReminder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rathore.health.Activity.ActivityUpdateMedicine"
+            android:label="@string/update_medications">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.example.archi.health.Activity.ActivityUpdateMedicine"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.rathore.health.Activity.ActivityTabMedicineReminder"
+            android:label="@string/medicine_and_reminder">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityTabMedicineReminder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rathore.health.Activity.ActivityDrugInformationDescription"
+            android:label="@string/drug_information" />
+        <activity
+            android:name=".Activity.ActivityAddVital"
+            android:label="@string/vital">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityAddVital" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalAlcohol"
+            android:label="@string/add_alcohol" />
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalBloodPressure"
+            android:label="@string/add_blood_pressure" />
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalBurnCalories"
+            android:label="@string/add_burn_calories" />
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalCoffine"
+            android:label="@string/add_coffine" />
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalHeight"
+            android:label="@string/add_height" />
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalPulse"
+            android:label="@string/add_pulse" />
+        <activity
+            android:name="com.rathore.health.Activity.Vital.ActivityVitalWeight"
+            android:label="@string/add_weight" />
+        <activity
+            android:name=".Activity.Vital.ActivityVitalTemparature"
+            android:label="@string/add_temparature" />
+        <activity
+            android:name=".Activity.ActivityUpdateHealthRecord"
+            android:label="@string/update_health_record"
+            android:windowSoftInputMode="stateHidden">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="com.example.archi.health.Activity.ActivityHealthRecord"/> -->
+            <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name="com.rathore.health.Activity.Profile.Calendar.MainCalendar" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateAlcohol" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateBloodPressure" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateBurnCalories" />
+        <activity android:name=".Activity.VitalUpdate.ActivityVitalUpdateCoffine" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateHeight" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateIntakeCalories" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateTemparature" />
+        <activity android:name="com.rathore.health.Activity.ActivityAddInvestigation">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityAddInvestigation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdatePulse" />
+        <activity android:name=".Activity.Vital.ActivityVitalIntakeCalories" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDisplayTemperature" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDisplayPulse" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDisplayBloodPressure" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDisplayHeight" />
+        <activity android:name=".Activity.VitalDisplay.ActivityVitalDisplayWeight" />
+        <activity android:name=".Activity.VitalDisplay.ActivityVitalDisplayIntakeCalories" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDisplayBurnCalories" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDiaplayAlcohol" />
+        <activity android:name="com.rathore.health.Activity.VitalDisplay.ActivityVitalDisplayCaffeine" />
+        <activity android:name="com.rathore.health.Activity.VitalUpdate.ActivityVitalUpdateWeight" />
+        <activity android:name="com.rathore.health.Activity.ActivityUpdateInvestigation">
+            <intent-filter>
+                <action android:name="com.rathore.newsweathertraffic.Activity.ActivityUpdateInvestigation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+               <activity
+                    android:name="com.rathore.health.Activity.Profile.ActivityProfileCalender"
+                    android:configChanges="orientation|screenSize|keyboardHidden" />
+                <activity android:name="com.rathore.health.Activity.Profile.ActivityProfileCalenderView" />
+                <activity android:name="com.rathore.health.Activity.Profile.ActivityProfileReportSomethingTab" >
+                    <intent-filter>
+                        <action android:name="com.rathore.newsweathertraffic.Activity.Profile.ActivityProfileReportSomethingTab" />
+
+                        <category android:name="android.intent.category.DEFAULT" />
+                    </intent-filter>
+                </activity>
+
+        <!--        <activity android:name=".Activity.MyLocationActivity" />-->
+
+        <receiver android:name="com.rathore.health.AlarmReceiver">
+
+            <!--
+            android:enabled="true"
+            android:exported="false"
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    </application>
+
+</manifest>

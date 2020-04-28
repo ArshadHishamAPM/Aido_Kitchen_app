@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/rectangle"
+            >
+   <LinearLayout
+       android:layout_width="match_parent"
+
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="#ececec"
+       android:padding="30dp">
+
+
+        <EditText
+            android:id="@+id/fragment_profile_illness_search"
+            android:layout_width="match_parent"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+android:textColor="@color/white"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:background="@drawable/illnesssearch"
+            android:layout_height="wrap_content"
+            android:hint="ADD"
+            android:textColorHint="@color/white"
+            android:layout_weight="2"
+            />
+       <Button
+           android:id="@+id/fragment_profile_btn_add_illness"
+           android:layout_width="wrap_content"
+           android:text="@string/add"
+           android:paddingTop="6dp"
+           android:paddingBottom="5dp"
+           android:background="@color/white"
+           android:textColor="@color/sky_blue"
+           android:layout_height= "match_parent"/>
+
+   </LinearLayout>
+
+
+
+
+
+
+
+     <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/fargment_profile_illness_recycle"
+         android:layout_width="match_parent"
+         android:padding="@dimen/_5sdp"
+         android:background="#ecec"
+         android:layout_height="match_parent">
+
+     </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

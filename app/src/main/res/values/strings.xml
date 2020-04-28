@@ -1,0 +1,323 @@
+<resources>
+
+    <string name="Add">Add</string>
+    <string name="add">Add</string>
+    <string name="reminder_name">Name</string>
+    <string name="enter_reminder_name">Enter Reminder Name</string>
+    <string name="reminder_for">Reason for reminder</string>
+    <string name="date">date</string>
+    <string name="time">Time</string>
+    <string name="app_name">Health</string>
+    <string name="txtdruginfo">Drug Information</string>
+    <string name="txtremider"> Medications and Reminders</string>
+    <string name="txthelthrecorf">Helth Records </string>
+    <string name="txthospitalfinser">Hospital Finder Information</string>
+    <string name="drug_information">drug info</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="reminder">Reminder</string>
+    <string name="health_record">Health Record</string>
+    <string name="add_health_record">Add Health Record</string>
+    <string name="save">save</string>
+    <string name="reminder_note_hint">Add your note</string>
+    <string name="reminder_note">Note</string>
+    <string name="reminder_repeat">Reapeat</string>
+    <string name="search">Enter Your Medicine Name</string>
+    <string name="google_maps_key">AIzaSyDskk_nwoWy8WNWdMfQ9-qaaj8KvnfwL7A</string>
+    <string name="hospital_finder">Hospital Finder</string>
+    <string name="title_activity_hospital_find">Map</string>
+    <string name="reminder_reason">Reminder Reason</string>
+    <string name="reminder_notehint">Please write your note</string>
+    <string name="add_helth_record_name">Enter name here</string>
+    <string name="add_helth_record_img">Click on image to change it</string>
+    <string name="add_helth_record_hintbirthdate">Chose Your Birth Date</string>
+    <string name="add_helth_record_bloodtype">Blood Type</string>
+    <string name="add_helth_record_norbdytmp">Normal Body Tempature</string>
+    <string name="add_helth_record_attergies">Attergies</string>
+    <string name="add_helth_record_helthcondition">Health Condition</string>
+    <string name="add_helth_record_medications">Medication</string>
+    <string name="add_helth_record_surgerhistory">Surgeries History</string>
+    <string name="add_helth_record_hospitalhistory">Hospitalization History</string>
+    <string name="add_helth_record_notes">Notes</string>
+    <string name="add_helth_record_allergies">Allergies</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="add_health_record_surgerey_history_hint">Add your sergery history</string>
+    <string name="add_health_record_hospital_history_hint">add your previous hospital history</string>
+    <string name="act_add_reminder_notes_hint">add other notes</string>
+    <string name="medicine_and_reminder">Medicine and Reminder</string>
+    <string name="activity_add_health_record_add_more">CLick here to add more details</string>
+    <string name="add_medicinname">Name</string>
+    <string name="medicine_type">Type</string>
+    <string name="medicine_route">Route</string>
+    <string name="medicine_dosage">Dosage</string>
+    <string name="medicine_instn">Instruction</string>
+    <string name="medicine_talking">Reason for talking</string>
+    <string name="startdate">Start Date</string>
+    <string name="enddate">End Date</string>
+    <string name="totalquantity">Total Quantity</string>
+    <string name="prescribeby">Prescribe By</string>
+    <string name="api_key_acces_near_hospital">AIzaSyDskk_nwoWy8WNWdMfQ9-qaaj8KvnfwL7A</string>
+
+
+    <string name="enter_medicin_name">Enter medicine Name</string>
+    <string name="enter_medicin_type">Enter medicine Type</string>
+    <string name="add_medications">Add Mediactions</string>
+    <string name="Cancel">cancel</string>
+    <string name="gps_network_not_enabled">Network not available</string>
+    <string name="open_location_settings">settings</string>
+    <string name="update_reminder">Update Reminder</string>
+    <string name="update">Update</string>
+    <string name="update_medications">update medications</string>
+    <string name="delete">Delete</string>
+    <string name="do_you_realy_want_to_delete">Do you Really want to delete ?</string>
+    <string name="add_health_record_allergies">Add your Allergies</string>
+    <string name="purpose">purpose</string>
+    <string name="warning">Warning</string>
+    <string name="children">children</string>
+    <string name="overDoses">OverDoses</string>
+    <string name="description">Description</string>
+    <string name="vital">vital</string>
+    <string name="temprature">Temperature</string>
+    <string name="pulse">Pulse</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="burn_calories">Burn Calories</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="ft">FT</string>
+    <string name="unit">unit</string>
+    <string name="bpm">bpm</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="kg">KG</string>
+    <string name="k">K</string>
+    <string name="kcl">kCal</string>
+    <string name="persontage">     %</string>
+    <string name="cup">Cup</string>
+    <string name="coffine">coffine</string>
+    <string name="coffein">Coffeine</string>
+    <string name="add_alcohol">Add Alcohol</string>
+    <string name="add_blood_pressure">Add Blood Pressure</string>
+    <string name="add_burn_calories">Add Burn Calories</string>
+    <string name="add_coffine">Add Coffine</string>
+    <string name="add_height">Add Height</string>
+    <string name="add_pulse">Add Pulse</string>
+    <string name="add_weight">Add Weight</string>
+    <string name="add_temparature">Add Temparature</string>
+    <string name="select_date">Select date</string>
+    <string name="select_time">Select Time</string>
+
+    <string name="kilogram">kCal</string>
+
+    <string name="choose_bgp">choose blood group</string>
+    <string name="update_health_record">Update Health Record</string>
+    <string name="attached_note">Attached Note</string>
+    <string name="report_something">Report Something</string>
+    <string name="copy_same_day">Copy same day</string>
+    <string name="head_and_neck"><![CDATA[Head & neck]]></string>
+    <string name="chest">Chest</string>
+    <string name="paleric_area">Paleric Area</string>
+    <string name="left_hand">Left Hand</string>
+    <string name="right_hand">Right Hand</string>
+    <string name="left_lag">Left Lag</string>
+    <string name="Right_lag">Right Lag</string>
+    <string name="intake_calories">Intake Calories</string>
+    <string name="medication">Medication</string>
+    <string name="doctor_visit">Doctor Visit</string>
+    <string name="other">other</string>
+    <string name="staying_home">Stying Home</string>
+    <string name="speciality">Speciality</string>
+    <string name="vcaccine">vcaccine</string>
+    <string name="idate">Date</string>
+    <string name="itime">Time</string>
+    <string name="investiname">Investigation</string>
+    <string name="iresult">Result</string>
+    <string name="iunit">Unit</string>
+    <string name="irepeat">Reapeat</string>
+    <string name="use">use</string>
+    <string name="dosage_forms_and_strengths">Dosage</string>
+    <string name="indications">Indications</string>
+    <string name="reactions">Reactions</string>
+    <string name="near_me">Near Me</string>
+    <string name="note">Or Type in an address</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="moreinfo">More info</string>
+
+
+    <string-array name="bloodgp_array">
+        <item>O</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O-</item>
+        <item>AB+</item>
+    </string-array>
+
+
+    <string-array name="repeat_day_array">
+        <item>Everyday</item>
+        <item>weekly</item>
+        <item>monthly</item>
+    </string-array>
+
+
+    <string-array name="medicin_route">
+        <item>By Mouth</item>
+        <item>In Ear</item>
+        <item>In Eye</item>
+        <item>In Nose</item>
+        <item>Inhalation </item>
+        <item>Rectal</item>
+        <item>Topical </item>
+        <item>Under the Tongue</item>
+        <item>Vaginal</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="medicin_dosage">
+        <item>Once A Day At Morning</item>
+        <item>Once A Day At Afternoon</item>
+        <item>Once A Day At Evening</item>
+        <item>Once A Day At Night</item>
+        <item>A Bed Time</item>
+        <item>Twice A Day  </item>
+        <item>Three Times A Day</item>
+        <item>Four Times A Day</item>
+        <item>Every Alternate Day At Morning</item>
+        <item>Every Alternate Day At Evening</item>
+        <item>Once A Week At Morning</item>
+        <item>Once A Week At Evening</item>
+        <item>Once A Month At Morning</item>
+        <item>Once A Month At Evening</item>
+    </string-array>
+
+    <string-array name="medicin_instruction">
+        <item>After Food</item>
+        <item>Before Food</item>
+        <item>None</item>
+    </string-array>
+
+
+    <string-array name="medicin_duration">
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Months</item>
+        <item>Years</item>
+        <item>SOS</item>
+    </string-array>
+    <string-array name="vital_temp_unit">
+        <item>F</item>
+        <item>°C</item>
+    </string-array>
+    <string-array name="vital_height_unit">
+        <item>FT</item>
+        <item>CM</item>
+    </string-array>
+
+    <string-array name="vital_alcohol_unit">
+        <item>FT</item>
+        <item>CM</item>
+    </string-array>
+
+
+    <string-array name="profile_symptom_head_and_neck">
+        <item>cough</item>
+        <item>headches</item>
+        <item>ear</item>
+        <item>eyes</item>
+        <item>cough</item>
+        <item>neck</item>
+        <item>nose</item>
+        <item>oral</item>
+        <item>skin</item>
+        <item>throat</item>
+    </string-array>
+
+
+    <string-array name="profile_symptom_chest">
+        <item>breast</item>
+        <item>breathing</item>
+        <item>cough</item>
+        <item>skin</item>
+    </string-array>
+
+    <string-array name="profile_symptom_stomach_and_back">
+        <item>back</item>
+        <item>stomach</item>
+    </string-array>
+
+    <string-array name="profile_symptom_leg">
+        <item>ankie</item>
+        <item>foot and toes</item>
+        <item>hip</item>
+        <item>knee</item>
+        <item>skin</item>
+        <item>neck</item>
+        <item>thin</item>
+        <item>skin</item>
+    </string-array>
+
+    <string-array name="profile_symptom_hand">
+        <item>elbow</item>
+        <item>foream</item>
+        <item>fingers</item>
+        <item>shoulder</item>
+        <item>uppper arm</item>
+        <item>wrist</item>
+        <item>skin</item>
+    </string-array>
+
+    <string-array name="profile_symptom_palvik_area">
+        <item>Buttock</item>
+        <item>menstrua</item>
+        <item>testicle</item>
+        <item>urination</item>
+        <item>vaginal</item>
+    </string-array>
+
+    <string-array name="medicin_type">
+        <item>Tablet</item>
+        <item>Bandage</item>
+        <item>Capsule</item>
+        <item>Cream</item>
+        <item>Drops</item>
+        <item>Gel</item>
+        <item>Inhaler</item>
+        <item>Injection</item>
+        <item>Liquid</item>
+        <item>Lotion</item>
+        <item>Ointment</item>
+        <item>Plaster</item>
+        <item>Powder</item>
+        <item>Spirit</item>
+        <item>Spray</item>
+        <item>Syrup</item>
+    </string-array>
+
+
+    <string-array name="investigation_unit_type">
+        <item>%</item>
+        <item>Hhh</item>
+        <item>gm/dL</item>
+        <item>mg/L</item>
+        <item>mg/dL</item>
+        <item>miU/mL</item>
+        <item>ng/dL</item>
+        <item>pg/d</item>
+        <item>pg/mL</item>
+    </string-array>
+
+
+    <string-array name="investigation_repeat_type">
+        <item>Repeat Daily</item>
+        <item>Repeat Weekly</item>
+        <item>Repeat Monthly</item>
+        <item>Repeat Yearly</item>
+        <item> No Repeat</item>
+    </string-array>
+
+    <string-array name="vital_Weight_unit">
+        <item>KG</item>
+        <item>LB</item>
+    </string-array>
+
+</resources>
