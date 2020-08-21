@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffff"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/aidotabletop">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="@color/darkskyblue"-->
+        <!--android:elevation="4dp"-->
+        <!--/>-->
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:orientation="vertical">-->
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+        </LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/_5sdp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:weightSum="1"-->
+                <!--android:layout_gravity="bottom">-->
+                <!--<com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner-->
+                    <!--android:id="@+id/sp_GroceryList"-->
+                    <!--android:layout_width="127dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Grocery List"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:textColorHint="#05ab9a"-->
+                    <!--app:met_floatingLabel="normal"-->
+                    <!--android:layout_weight="0.66" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_AddStore"-->
+                    <!---->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/addButton"-->
+                    <!--/>-->
+                <!--  <Button
+                      android:id="@+id/btn_AddItemtobuy"
+                      android:text="@string/Shop"
+                      android:layout_marginLeft="@dimen/_5sdp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/btm_shape"/>-->
+            <!--</LinearLayout>-->
+            <ListView
+                android:layout_marginStart="250dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/lv_groceryitemlist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginRight="20dp"></ListView>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+        android:layout_gravity="bottom">
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/sp_GroceryList"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:hint="Grocery List"
+        android:visibility="gone"
+        android:background="@drawable/border"
+        android:textColorHint="#05ab9a"
+        app:met_floatingLabel="normal"
+        android:layout_weight="0.66" />
+
+        <Button
+            android:id="@+id/btn_AddStore"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:backgroundTint="#3DBE98"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/addbutton"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

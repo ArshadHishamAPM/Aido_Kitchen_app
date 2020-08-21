@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_virtual_wine_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_shape"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context="com.archirayan.kitchen.Activity.VirtualWineManager">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Please complete the following infortion."
+                    android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:padding="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/ivwineimage"
+                    android:src="@drawable/ic_wine" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <EditText
+                    android:id="@+id/edtvintage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="@string/enter_the_bottle_vintage"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edtwinery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="@string/enter_the_wine_producer"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edtwinename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/edt_shape"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:hint="@string/enter_the_complete_wine_name" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/edt_shape"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type" />
+
+                        <Spinner
+                            android:id="@+id/sprtype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/type"></Spinner>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size" />
+
+
+                        <Spinner
+                            android:id="@+id/sprsize"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/size"></Spinner>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtstartdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:background="@drawable/edt_shape"
+                        android:hint="Start Date"
+                        android:inputType="number" />
+
+
+                    <EditText
+                        android:id="@+id/edtenddate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:background="@drawable/edt_shape"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:hint="End Date"
+                        android:inputType="number" />
+
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/edtpaidbottle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="@string/price_you_paid_for_this_bottle"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/edtstorelocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="Whrere this bottle is stored" />
+
+                <EditText
+                    android:id="@+id/edtstorewherepurchased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="Store where purchased" />
+
+
+                <EditText
+                    android:id="@+id/edtdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+
+                    android:hint="1/1/2017" />
+
+                <EditText
+                    android:id="@+id/edtEntertestingnotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="Enter testing notes" />
+
+
+                <EditText
+                    android:id="@+id/edtEntertestin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:background="@drawable/edt_shape"
+                    android:hint="Enter name of others who tasted with you" />
+
+
+                <Button
+                    android:id="@+id/btnsaveVirtualwine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/background_shape"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="Save" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

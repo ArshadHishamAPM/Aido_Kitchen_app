@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-
     <!-- Tab title -->
     <TextView
         android:id="@+id/tab_title"
@@ -15,7 +14,7 @@
 
 
         android:textColor="@drawable/tab_item_selector"
-       />
+        />
 
     <!-- Tab divider -->
     <View

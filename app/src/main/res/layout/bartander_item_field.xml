@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lirecipesitem"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="false"
+            card_view:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/img_bartanderimage"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/_125sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/loading" />
+
+        <TextView
+            android:id="@+id/txt_bartander_strdrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/txt_bartander_drinkid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+
+            android:textSize="30sp"/>
+
+</android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_1sdp"-->
+        <!--android:background="@android:color/white"></View>-->
+
+</LinearLayout>

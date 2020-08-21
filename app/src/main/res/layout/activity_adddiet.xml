@@ -1,0 +1,1928 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efeeee"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/ll1"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:src="@drawable/kitchentop"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#747373"
+                android:textStyle="bold"
+                android:text="Kitchen"
+                />
+
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar" />
+            </LinearLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="@dimen/_5sdp"-->
+                <!--android:layout_marginTop="@dimen/_10sdp"-->
+                <!--android:weightSum="1">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/activity_adddiety_ll"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2">-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1.2"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/img_UserImage"-->
+                            <!--android:layout_width="@dimen/_100sdp"-->
+                            <!--android:layout_height="@dimen/_100sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:padding="@dimen/_10sdp"-->
+                            <!--android:src="@mipmap/ic_launcher" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.8"-->
+                        <!--android:orientation="vertical">-->
+
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:orientation="horizontal"-->
+                            <!--android:weightSum="2">-->
+
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/txt_mealdate"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginLeft="29dp"-->
+                                <!--android:layout_marginStart="29dp"-->
+                                <!--android:layout_marginTop="27dp"-->
+                                <!--android:layout_toEndOf="@+id/img_UserImage"-->
+                                <!--android:layout_toRightOf="@+id/img_UserImage"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:text="Date" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/txt_mealtime"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginLeft="9dp"-->
+                                <!--android:layout_marginTop="27dp"-->
+                                <!--android:layout_marginStart="0dp"-->
+                                <!--android:layout_toEndOf="@+id/txt_mealdate"-->
+                                <!--android:layout_toRightOf="@+id/txt_mealdate"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:text="Time" />-->
+                        <!--</LinearLayout>-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView4"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_alignLeft="@+id/txt_mealdate"-->
+                            <!--android:layout_alignStart="@+id/txt_mealdate"-->
+                            <!--android:layout_below="@+id/txt_mealdate"-->
+                            <!--android:layout_marginTop="20dp"-->
+                            <!--android:text="MealType" />-->
+
+                        <!--<Spinner-->
+                            <!--android:id="@+id/sp_MealTypeadd"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_alignLeft="@+id/textView4"-->
+                            <!--android:layout_alignParentEnd="true"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:layout_alignStart="@+id/textView4"-->
+                            <!--android:layout_below="@+id/textView4"-->
+                            <!--android:layout_marginBottom="5dp"-->
+                            <!--android:layout_marginEnd="12dp"-->
+                            <!--android:layout_marginRight="12dp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:elevation="@dimen/_5sdp" />-->
+                    <!--</LinearLayout>-->
+
+                <!--</LinearLayout>-->
+
+
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_Calories"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_30sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_below="@id/activity_adddiety_ll"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Calories"-->
+                    <!--android:inputType="number" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_Title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_30sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_Calories"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Title"-->
+                    <!--android:inputType="text" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView5"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_Title"-->
+                    <!--android:hint="Ingredients" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_add_Ingredients"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_Title"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:src="@android:drawable/ic_input_add" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_30sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/img_add_Ingredients"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Ingredients Item"-->
+                    <!--android:inputType="text" />-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_ingredients1"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_ingredients2"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients4"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_below="@+id/edt_ingredients3"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients5"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_below="@+id/edt_ingredients4"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients6"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_ingredients5"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients7"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_ingredients6"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients8"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:layout_below="@+id/edt_ingredients7"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients9"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_ingredients8"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edt_ingredients10"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="@dimen/_40sdp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_below="@+id/edt_ingredients9"-->
+                    <!--android:layout_marginTop="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/border"-->
+                    <!--android:elevation="@dimen/_5sdp"-->
+                    <!--android:paddingLeft="@dimen/_10sdp"-->
+                    <!--android:ems="10"-->
+                    <!--android:hint="Item"-->
+                    <!--android:inputType="text"-->
+                    <!--android:visibility="gone" />-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_margin="@dimen/_5sdp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Nutrients" />-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/img_addNutrients"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:background="@android:drawable/ic_input_add" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ly_Natruents"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:visibility="gone">-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_10sdp"-->
+                            <!--android:text="Carbohydrates" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_15sdp"-->
+                            <!--android:text="Fat" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_15sdp"-->
+                            <!--android:text="Saturatedfat" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_15sdp"-->
+                            <!--android:text="Protein" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_15sdp"-->
+                            <!--android:text="Fiber" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_15sdp"-->
+                            <!--android:text="Sugars" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginTop="@dimen/_15sdp"-->
+                            <!--android:text="Sodium" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Carbohydrates"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:elevation="@dimen/_10sdp"-->
+                            <!--android:hint="Carbohydrates"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:inputType="number" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Fat"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:hint="Fat"-->
+                            <!--android:inputType="number" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Saturatedfat"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:elevation="@dimen/_10sdp"-->
+                            <!--android:hint="Saturatedfat"-->
+                            <!--android:inputType="number" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Protein"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:elevation="@dimen/_10sdp"-->
+                            <!--android:hint="Protein"-->
+                            <!--android:inputType="number" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Fiber"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:elevation="@dimen/_10sdp"-->
+                            <!--android:hint="Fiber"-->
+                            <!--android:inputType="number" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Sugars"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:elevation="@dimen/_10sdp"-->
+                            <!--android:hint="Sugars"-->
+                            <!--android:inputType="number" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/edt_Nutrients_Sodium"-->
+                            <!--android:layout_width="@dimen/_150sdp"-->
+                            <!--android:layout_height="@dimen/_30sdp"-->
+                            <!--android:layout_marginTop="@dimen/_5sdp"-->
+                            <!--android:background="@drawable/border"-->
+                            <!--android:paddingLeft="@dimen/_10sdp"-->
+                            <!--android:elevation="@dimen/_10sdp"-->
+                            <!--android:hint="Sodium"-->
+                            <!--android:inputType="number" />-->
+
+
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="@dimen/_10sdp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Note" />-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/edt_Note"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="@dimen/_30sdp"-->
+                        <!--android:paddingLeft="@dimen/_10sdp"-->
+                        <!--android:background="@drawable/border"-->
+                        <!--android:elevation="10dp"-->
+                        <!--android:hint="Note" />-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btn_Save"-->
+                        <!--android:layout_width="@dimen/_100sdp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="@dimen/_90sdp"-->
+                        <!--android:layout_marginTop="@dimen/_10sdp"-->
+                        <!--android:background="@drawable/background_shape"-->
+                        <!--android:text="Save" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+<!--</LinearLayout>-->
+
+
+
+
+<!--///////////-->
+
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="5dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_weight="1">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_UserImage"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:background="@drawable/border"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/selectuser2" />
+            <Spinner
+                android:id="@+id/sp_MealTypeadd"
+                android:layout_width="100dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="65dp"
+                android:layout_height="20dp"
+                android:background="#9dcae6"
+                android:spinnerMode="dialog"
+               />
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/date1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="25sp"
+
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_mealdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+
+            android:layout_marginTop="5dp"
+            android:paddingBottom="15dp"
+            android:textColor="#747373"
+            android:textSize="20sp"
+            android:text="Date" />
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffff"
+            android:layout_weight="1">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="25sp"
+
+            android:textColor="#747373"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txt_mealtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="15dp"
+                android:textColor="#747373"
+                android:textSize="20sp"
+                android:text="Time"></TextView>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"
+        />
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="20dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/wineproducer"/>-->
+            <!--<TextView-->
+
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Enter the wine  producer"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="20dp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<Spinner-->
+            <!--android:id="@+id/sp_MealTypeadd"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@null"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:spinnerMode="dialog"-->
+
+            <!--android:backgroundTint="#fff"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="#e6e2e2"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/calories"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calories "
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_Calories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Calories"
+            android:inputType="number" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/title"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/edt_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@null"
+                android:paddingBottom="15dp"
+                android:textSize="20sp"
+                android:textColorHint="#747373"
+                android:textColor="#747373"
+                android:layout_marginTop="5dp"
+                android:hint="Title"
+                android:inputType="text" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#ffff"
+        android:id="@+id/edt_ingredients11"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ingredients"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:id="@+id/textView5"
+                android:layout_marginLeft="20dp"/>
+            <ImageView
+                android:id="@+id/img_add_Ingredients"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+
+
+                android:src="@drawable/add" />
+
+        </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Ingredients Item"
+            android:inputType="text" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/edt_ingredients21"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+
+
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+            android:inputType="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ingredients31"
+        android:visibility="gone"
+
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+                android:textColor="#747373"
+
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+
+            android:inputType="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ingredients41"
+        android:visibility="gone"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+            android:inputType="text"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ingredients51"
+        android:visibility="gone"
+
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+                android:textColor="#747373"
+
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+
+            android:inputType="text" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ingredients61"
+        android:visibility="gone"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+            android:inputType="text"
+
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_ingredients71"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+                android:textColor="#747373"
+
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+
+            android:inputType="text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/edt_ingredients81"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+            android:inputType="text"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/edt_ingredients91"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+                android:textColor="#747373"
+
+
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+
+            android:inputType="text" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/edt_ingredients101"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/winetype"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textSize="25sp"
+                android:textColor="#747373"
+
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/edt_ingredients10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="15dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+
+            android:layout_marginTop="5dp"
+            android:hint="Type here..."
+            android:visibility="gone"
+            android:inputType="text"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#e6e2e2"/>
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="20dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/winedate"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Start Date"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="20dp"/>-->
+        <!--</LinearLayout>-->
+        <!--<EditText-->
+            <!--android:id="@+id/edtstartdate"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:background="@null"-->
+            <!--android:paddingBottom="25dp"-->
+            <!--android:focusable="false"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginTop="5dp"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="#e6e2e2"/>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginTop="20dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/winedate"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="End Date"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="20dp"/>-->
+        <!--</LinearLayout>-->
+        <!--<EditText-->
+            <!--android:id="@+id/edtenddate"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:background="@null"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:focusable="false"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginTop="5dp"/>-->
+
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="#e6e2e2"/>-->
+
+
+
+
+</LinearLayout>
+
+
+
+
+<!--///////////////-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:layout_weight="1">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--&gt;-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<ImageView-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:src="@drawable/wineprice"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Nutrients"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_marginLeft="20dp"/>-->
+        <!--</LinearLayout>-->
+        <!--<TextView-->
+            <!--android:id="@+id/edtpaidbottle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="60dp"-->
+            <!--android:background="@null"-->
+            <!--android:paddingBottom="10dp"-->
+<!--android:hint="Add Following "-->
+            <!--android:textColorHint="#fff"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginTop="5dp"/>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="#e6e2e2"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/carbohyd"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Carbohydrates "
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Carbohydrates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:hint="Enter here"
+            android:inputType="number"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#dedddd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fat2"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fat"
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Fat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:hint="Enter here"
+            android:inputType="number"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#dedddd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/milk"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saturated Fat"
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Saturatedfat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:inputType="number"
+            android:hint="Enter here"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#dedddd"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/protein"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Protein "
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Protein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:hint="Enter here"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:inputType="number"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fiber"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fiber "
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Fiber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:inputType="number"
+            android:hint="Enter here"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sugar"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sugar "
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Sugars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:hint="Enter here"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:inputType="number"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/sodium"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sodium "
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Nutrients_Sodium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:hint="Enter here"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            android:inputType="number"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffff"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/note1"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textSize="25sp"
+                android:textColor="#747373"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="@null"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="Enter here"
+            android:textSize="20sp"
+            android:textColorHint="#747373"
+            android:textColor="#747373"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+android:layout_marginTop="15dp"
+        android:background="#e6e2e2"/>
+
+
+
+
+        </LinearLayout>
+</LinearLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundedsave"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:text="@string/save"
+                android:id="@+id/btn_Save"
+                android:textSize="30dp"/>
+            </LinearLayout>
+        <!--android:layout_margin="@dimen/_5sdp"-->
+
+</ScrollView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+            <!--///////////////-->
+
+
+

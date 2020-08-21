@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/AddVirtualWinebottle"
+        android:orderInCategory="0"
+        android:icon="@drawable/addbaricon"
+        android:title=""
+        app:showAsAction="always" />
+
+
+</menu>

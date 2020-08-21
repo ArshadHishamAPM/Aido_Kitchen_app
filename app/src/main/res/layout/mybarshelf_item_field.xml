@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lirecipesitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="false"
+            card_view:cardPreventCornerOverlap="false">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+            <ImageView
+                android:id="@+id/img_barshelfimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_125sdp"
+
+                android:scaleType="fitXY"
+                android:src="@drawable/loading" />
+
+            <ImageView
+                android:id="@+id/img_mybarshelf_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_4sdp"
+
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/delete" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtmybarshelf_strdrink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/white"/>
+        </android.support.v7.widget.CardView>
+        <!--  <TextView
+              android:id="@+id/txt_mybarshelf_drinkid"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text=""
+              android:textSize="@dimen/_18sdp" />-->
+
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_1sdp"-->
+            <!--android:background="@android:color/white"></View>-->
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_virtual_wine_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical"
+android:focusableInTouchMode="false"
+    android:focusable="false"
+    tools:context="com.archirayan.kitchen.Activity.VirtualWineManager">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#c9c8c8"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+
+
+                android:id="@+id/ll1"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+
+                >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="400dp"
+                    android:src="@drawable/kitchentop"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/text"
+                    android:text="Kitchen"
+                    android:layout_marginTop="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/_200sdp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="@dimen/_10sdp">-->
+
+                <!--<ImageView-->
+
+                    <!--android:id="@+id/activity_wine_bottel_detail_display_imgdata"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_200sdp"-->
+                    <!--android:scaleType="fitXY"-->
+                    <!--android:src="@drawable/ic_wine" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:padding="@dimen/_5sdp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Bottle Vintage"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_bottle_vintage"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                       <!--android:focusableInTouchMode="false"-->
+                        <!--android:focusable="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Wine Producer"/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_wine_producer"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:inputType="text"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:focusable="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Wine Name"/>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_wine_name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:inputType="text"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:focusable="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+                <!--</LinearLayout>-->
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                    <!--android:background="@drawable/edt_shape"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:paddingLeft="@dimen/_10sdp">-->
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Type" />-->
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/activity_wine_bottel_detail_display_edit_wine_type"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:focusableInTouchMode="false"-->
+                            <!--android:focusable="false"-->
+                            <!--android:background="@drawable/edt_shape"-->
+                        <!--&gt;-->
+
+                        <!--</EditText>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:paddingLeft="@dimen/_10sdp">-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Size" />-->
+
+
+                        <!--<EditText-->
+                            <!--android:id="@+id/activity_wine_bottel_detail_display_edit_wine_size"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:background="@drawable/edt_shape"-->
+                            <!--android:focusableInTouchMode="false"-->
+                            <!--android:focusable="false"-->
+                            <!--android:layout_height="wrap_content"-->
+                          <!--&gt;-->
+
+                        <!--</EditText>-->
+
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_startdate"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:layout_marginRight="@dimen/_10sdp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:focusable="false"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:hint="Start Date"-->
+                        <!--android:inputType="number"-->
+                        <!--android:paddingLeft="@dimen/_10sdp" />-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_enddate"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:focusable="false"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:hint="End Date"-->
+                        <!--android:inputType="number"-->
+                        <!--android:paddingLeft="@dimen/_10sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Bottle Price"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_bottleprice"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:inputType="number"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:focusable="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Bottle Stored"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_bottlestored"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:inputType="number"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:focusable="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Purchased"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_bottlepurchased"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:inputType="number"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:focusable="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Date"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_date"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:focusable="false"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+
+                <!--</LinearLayout>-->
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text="Test Note"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_testnote"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:focusable="false"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:text=" Others Tested You"/>-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/activity_wine_bottel_detail_display_edit_other_testedyou"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="@dimen/_5sdp"-->
+                        <!--android:background="@drawable/edt_shape"-->
+                        <!--android:focusable="false"-->
+                        <!--android:focusableInTouchMode="false"-->
+                        <!--android:layout_marginLeft="@dimen/_20sdp" />-->
+
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginTop="15dp">-->
+
+
+            <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_gravity="center"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="#ffffff"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+                android:layout_marginTop="10dp"
+            card_view:cardUseCompatPadding="false"
+            card_view:cardPreventCornerOverlap="false">
+            <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/activity_wine_bottel_detail_display_imgdata"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+
+
+            android:src="@drawable/ic_wine" />
+            </android.support.v7.widget.CardView>
+
+
+            <!--</LinearLayout>-->
+
+
+
+            <!--<TextView-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:text="Please complete the following infortion."-->
+            <!--android:textSize="20sp"-->
+            <!--android:textColor="@color/white"-->
+            <!--/>-->
+
+            <!--newChange-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_marginTop="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/bottelvintage"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/enter_the_bottle_vintage"
+                                android:textSize="25sp"
+                                android:id="@+id/act_add_reminder_tv_name"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_bottle_vintage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/text"
+                            android:hint="enter vintage name"
+                            android:textSize="20sp"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:textColorHint="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/wineproducer"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter the wine  producer"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_wine_producer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textSize="20sp"
+                            android:hint="wine producer"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/completewinename"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter The Complete Wine Name "
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_wine_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textSize="20sp"
+                            android:hint="wine name"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winetype"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Type"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_wine_type"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@null"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/type"
+                            android:inputType="text"
+                            android:spinnerMode="dialog"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:textColor="@color/text"
+                            android:backgroundTint="@color/text">
+
+                        </EditText>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winetype"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Size"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+
+
+                        <EditText
+
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_wine_size"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@null"
+                            android:layout_marginLeft="60dp"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/size"
+                            android:inputType="number"
+                            android:spinnerMode="dialog"
+                            android:hint="size"
+                            android:textColor="@color/text"
+                            android:backgroundTint="@color/text"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false">
+
+                        </EditText>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winedate"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Start Date"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_startdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="25dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textSize="20sp"
+                            android:hint="start date"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winedate"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="End Date"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_enddate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:focusable="false"
+                            android:textSize="20sp"
+                            android:hint="end date"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"
+                            android:focusableInTouchMode="false"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+                <!--///////////////-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/wineprice"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Price You Paid For The Bottle"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_bottleprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:textSize="20sp"
+                            android:hint="price"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e6e2e2"
+                        android:layout_marginTop="15dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winestorage"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Where This Bottle Is Stored "
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_bottlestored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textSize="20sp"
+                            android:focusable="false"
+                            android:hint="store place"
+                            android:focusableInTouchMode="false"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winestore"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Store Where Purchased "
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_bottlepurchased"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textSize="20sp"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:hint="purchased store name"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winedate"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Date"
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:focusable="false"
+                            android:textSize="20sp"
+                            android:hint="date"
+                            android:textColorHint="@color/text"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/update"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter The Testing Notes  "
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_testnote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusableInTouchMode="false"
+                            android:focusable="false"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textSize="20sp"
+                            android:hint="testing notes"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_marginTop="20dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:tint="@color/blue"
+                                android:src="@drawable/winenameothers"/>
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Enter Name Of Others Who Tested With You "
+                                android:textSize="25sp"
+                                android:textColor="@color/text"
+                                android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <EditText
+                            android:id="@+id/activity_wine_bottel_detail_display_edit_other_testedyou"
+                            android:layout_width="match_parent"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="60dp"
+                            android:background="@null"
+                            android:paddingBottom="15dp"
+                            android:textSize="20sp"
+                            android:hint="tasted with other person"
+                            android:textColorHint="@color/text"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="#e6e2e2"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--</LinearLayout>-->
+            <!--</ScrollView>-->
+            <!--<Button-->
+
+
+                <!--android:layout_width="300dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_margin="@dimen/_5sdp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/winesavebutton"-->
+                <!--android:textColor="#59bef5"-->
+                <!--android:gravity="center"-->
+                <!--android:text="UPDATE"-->
+                <!--android:id="@+id/btnupdateVirtualwine"-->
+                <!--android:textSize="30dp" />-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f5dfdf"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_shopProductItem_pic"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@mipmap/ic_launcher" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_ShopItemName"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="ItemName" />
+                <TextView
+                    android:id="@+id/txt_ShopItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/text"
+                    android:textStyle="bold"
+                    android:text="Price" />
+                <TextView
+                    android:id="@+id/txt_ShopItemweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="wieght"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"/>
+              <!-- <Button
+                   android:id="@+id/btn_ItemBuy"
+                   android:layout_marginLeft="120dp"
+                   android:text="Buy"
+                   android:background="@android:color/holo_green_light"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -3,22 +3,19 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="drug_info">#E9E9E9</color>
-    <color name="background">#EEEEEE</color>
-    <color name="listbgpressed">#efb8cb</color>
-    <color name="listbgpresseds">#f4d9e2</color>
+    <color name="lightblue">#a9c6c9</color>
+    <color name="darklight">#a978be</color>
+    <color name="darkyellow">#e1ea78</color>
     <color name="black">#000000</color>
-    <color name="light_black">#383838</color>
-    <color name="light_blue">#ADD8E6</color>
-    <color name="white">#8a8a8a</color>
-    <color name="sky_blue">#59bef5</color>
-    <color name="background1">#f7f7f7</color>
-    <color name="new_background">#f7f2f2</color>
-    <color name="new_back">#faf8f8</color>
-    <color name="green">#3acb39</color>
-    <color name="white1">#fff</color>
-
-
+    <color name="darkskyblue">#2598e2</color>
+    <color name="skyblue">#59bef5</color>
+    <color name="white">#ffff</color>
+    <color name="viewcolor">#dedddd</color>
+    <color name="barviewcolor">#e6e2e2</color>
+    <color name="red">#f98080</color>
+    <color name="text">#747373</color>
+    <color name="Green">#3DBE98</color>
+    <color name="blue">#a2d5ea</color>
 
 
 

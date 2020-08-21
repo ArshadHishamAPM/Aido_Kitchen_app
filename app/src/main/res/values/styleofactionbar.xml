@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyTheme" parent="Theme.AppCompat">
+        <item name="android:actionBarSize">150dp</item>
+        <item name="actionBarSize">15dp</item>
+        <item name="android:actionBarItemBackground">@color/darkskyblue</item>
+
+    </style>
+</resources>

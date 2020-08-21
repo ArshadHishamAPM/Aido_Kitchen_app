@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recipes_details"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="@color/skyblue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:background="#efeded">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:id="@+id/ll1"
+        android:background="#d6d4d4"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:src="@drawable/kitchentop"
+            android:layout_marginLeft="50dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:text="Kitchen"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+
+    android:orientation="horizontal"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#d9d8d8"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                >
+                <!--@dimen/_200sdp-->
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card_view:cardBackgroundColor="#ffff"
+                    card_view:cardCornerRadius="10dp"
+                    card_view:cardElevation="5dp"
+                    card_view:cardUseCompatPadding="false"
+                    card_view:cardPreventCornerOverlap="false">
+                <ImageView
+                    android:id="@+id/ivRecipesRecipesDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                     />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#F4D03F"
+                    android:layout_gravity="bottom">
+                <TextView
+                    android:id="@+id/tvnameRecipesDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="bottom|start"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:text="PIzzza"
+                    android:textStyle="bold"
+                    android:textColor="@color/text"
+                    android:textSize="30sp" />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:id="@+id/img_setTime"-->
+                        <!--android:layout_marginLeft="15dp"-->
+
+
+                    <!--android:src="@drawable/receipealarm"/>-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                        android:visibility="gone"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/receipealarmcircle"
+                        android:layout_alignParentRight="true"/>
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"
+                            android:src="@mipmap/ic_shopping_cart" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/iveditRecipedetail1"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/receipealarmcircle"/>
+                        <ImageView
+                            android:layout_centerInParent="true"
+
+                            android:layout_width="25dp"
+                            android:visibility="gone"
+                            android:layout_height="25dp"
+
+
+                            android:id="@+id/iveditRecipedetail"
+
+                            android:src="@mipmap/edit" />
+                    </RelativeLayout>
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/receipebluestar"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginRight="15dp"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/activity_detail_ivsave"-->
+                    <!--/>-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/img_setTime1"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/receipealarmcircle"
+                       />
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/img_setTime"
+
+
+                            android:src="@drawable/time1" />
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:layout_marginLeft="28dp"-->
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/ivDeleteRecipeDetail1"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                       android:layout_centerInParent="true"
+                        android:src="@drawable/receipealarmcircle"
+                       />
+                        <ImageView
+                            android:layout_centerInParent="true"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/ivDeleteRecipeDetail"
+                            android:src="@drawable/delete2"
+                            />
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:layout_marginLeft="30dp"-->
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp">
+
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/activity_detail_ivsave1"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                       android:layout_centerInParent="true"
+                        android:src="@drawable/receipealarmcircle"
+                       />
+                        <ImageView
+
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/activity_detail_ivsave"
+                            android:visibility="gone"
+                            android:layout_marginLeft="25dp"
+                            android:src="@drawable/receipebluestar" />
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+        </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/background_shape"-->
+                <!--android:orientation="horizontal">-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+                    <!--android:id="@+id/iveditRecipedetail"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:src="@mipmap/edit" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:src="@mipmap/ic_shopping_cart" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:id="@+id/img_setTime"-->
+                    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:src="@mipmap/ic_time" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:id="@+id/ivDeleteRecipeDetail"-->
+                    <!--android:src="@mipmap/ic_delete" />-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="@dimen/_35sdp"-->
+                    <!--android:layout_height="@dimen/_35sdp"-->
+                    <!--android:layout_marginLeft="@dimen/_15sdp"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:id="@+id/activity_detail_ivsave"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:src="@drawable/ic_star" />-->
+
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvRatingRecipesDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rank :"
+                    android:textColor="@color/text"
+                    android:textSize="30sp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:tint="#db8bf1"
+        android:src="@drawable/receipestar"
+
+        android:layout_marginLeft="15dp"/>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#db8bf1"
+        android:src="@drawable/receipestar"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#db8bf1"
+        android:src="@drawable/receipestar"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#db8bf1"
+        android:src="@drawable/receipestar"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:tint="#db8bf1"
+        android:src="@drawable/receipestar"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:tint="@color/Green"
+                   android:src="@drawable/receipeingredient"
+                   android:layout_marginTop="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Ingredients :"
+                    android:textColor="@color/text"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"/>
+
+
+</LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/liIngredients"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/_80sdp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:src="@drawable/receipeurlicon"-->
+                        <!--/>-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tvsourceurl"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:text="Sorce url "-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="25sp"-->
+                       <!--/>-->
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+
+
+            <!--</LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_marginLeft="350dp"
+                >
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/receipealarmcircle"></ImageView>
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:tint="@color/Green"
+                android:layout_centerInParent="true"
+                android:src="@drawable/receipeurlicon"
+                />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvsourceurl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Source url "
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text"
+                android:textSize="25sp"
+                android:layout_marginTop="15dp"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</LinearLayout>

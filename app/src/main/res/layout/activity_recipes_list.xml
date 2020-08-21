@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recipes_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+  ><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aidotabletop">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#efeded"
+        android:gravity="center"
+        android:id="@+id/ll1"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="60dp"
+            android:src="@drawable/kitchentop"
+            android:layout_marginLeft="50dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="Kitchen"
+            />
+        </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/_10sdp"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/edtSearch"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:singleLine="true"-->
+                <!--android:hint="@string/search_by_ingredients_or_name"-->
+                <!--android:layout_height="@dimen/_35sdp"-->
+                <!--android:background="@drawable/edt_shape"-->
+                <!--android:layout_marginRight="@dimen/_10sdp"-->
+                <!--android:layout_weight="1" />-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="@dimen/_35sdp"-->
+                <!--android:id="@+id/btnSearch"-->
+                <!--android:background="@drawable/btm_shape"-->
+                <!--android:text="Search" />-->
+
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="250dp"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#f2f2f2"
+
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#ffff"
+                android:layout_weight="2"
+
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/menu1"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:id="@+id/edtSearch"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:textColorHint="#898888"
+                    android:hint="@string/search"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="0dp"/>
+            </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSearch"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedrectangle2"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/searchicon"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="30dp"
+                    android:text="Search" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginStart="250dp"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="15dp">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>
+
+
+

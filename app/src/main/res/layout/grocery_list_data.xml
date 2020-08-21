@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5dfdf"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="35dp"
+    android:tint="@color/red"
+    android:src="@drawable/glyphrecord"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/grocery_listdata_text"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:text="grocery"
+            android:layout_marginBottom="5dp"
+            android:textColor="#747373"
+            android:layout_marginLeft="20dp"
+
+
+            />
+
+        <!--<ImageView-->
+            <!--android:layout_width="@dimen/_20sdp"-->
+            <!--android:layout_height="@dimen/_30sdp"-->
+            <!--android:src="@drawable/delete"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/grocery_listdata_img"-->
+            <!--android:layout_weight="1"/>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="210dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:id="@+id/delete"
+                android:src="@drawable/deletebox"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="58dp"
+
+                />
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/redring"
+                android:id="@+id/grocery_listdata_img"
+                android:layout_marginLeft="40dp"
+                />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/viewcolor"/>
+</LinearLayout>

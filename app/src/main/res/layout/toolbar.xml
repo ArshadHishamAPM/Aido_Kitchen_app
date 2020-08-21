@@ -1,70 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/toolbar_home"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#ececec"
     android:minHeight="?attr/actionBarSize"
-    app:titleTextColor="@android:color/white">
-    <!--android:background="?attr/colorPrimary"-->
 
-
+    android:background="#e1e0e0"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
     <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
 
-      <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        <!--<ImageView-->
+        <!--android:id="@+id/toolbar_save_iv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
 
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:src="@drawable/ic_action_right"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+        <!--<ImageView-->
+        <!--android:id="@+id/toolbar_save_iv1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+
+        <!--android:padding="@dimen/_5sdp"-->
+        <!--android:src="@drawable/ic_action_right"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginLeft="50dp"-->
+
+        <!--/>-->
+        <!--</LinearLayout>-->
         <ImageView
-            android:id="@+id/toolbar_save_iv"
+            android:id="@+id/imgq"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/groceryhead"
+            android:layout_marginLeft="370dp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/ic_action_right"
-            android:visibility="gone"
-            />
+            android:textColor="@color/text"
+            android:textSize="25sp"
+            android:text="Grocery"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/imgq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="05dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/toolbar_title"></TextView>
 
-        <ImageView
-            android:id="@+id/toolbar_save_iv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:src="@drawable/ic_action_right"
-            android:visibility="gone"
-            android:layout_marginLeft="50dp"
-            />
 
-      </LinearLayout>
-
-      <ImageView
-        android:id="@+id/imagtool"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="6dp"
-        android:layout_marginStart="297dp"
-        android:layout_marginLeft="277dp"
-        android:layout_alignParentLeft="true" />
-
-      <TextView
-        android:id="@+id/toolbar_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="335dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="335dp">
-      </TextView>
-
-  </RelativeLayout>
+    </RelativeLayout>
 
 </android.support.v7.widget.Toolbar>

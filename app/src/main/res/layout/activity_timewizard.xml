@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:background="@drawable/aidotabletop">
+
+       <LinearLayout
+           android:id="@+id/ll1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_gravity="center"
+           android:layout_marginBottom="10dp"
+           android:background="#efeded"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+           <ImageView
+               android:layout_width="45dp"
+               android:layout_height="60dp"
+               android:layout_marginLeft="50dp"
+               android:src="@drawable/kitchentop"
+
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="20dp"
+               android:text="Kitchen"
+               android:textColor="@color/text"
+               android:textSize="30sp"
+               android:textStyle="bold" />
+
+       </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:padding="@dimen/_5sdp">-->
+
+        <ListView
+            android:id="@+id/lv_timewizard"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="250dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"></ListView>
+        <Button
+            android:id="@+id/btn_setTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Set time"
+            android:textColor="#ffff"
+            android:background="@drawable/roundedrectangle2"
+            android:drawableLeft="@drawable/time1"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+   </LinearLayout>
+    </LinearLayout>
+
+

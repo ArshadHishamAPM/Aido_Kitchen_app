@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/bottleglass"
+        android:orderInCategory="0"
+        android:icon="@drawable/baricon"
+        android:title="bartendar"
+        app:showAsAction="always" />
+
+
+</menu>

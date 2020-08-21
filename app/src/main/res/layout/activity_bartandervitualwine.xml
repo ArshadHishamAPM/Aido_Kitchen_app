@@ -1,0 +1,96 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Adapter.BarTanderVitualWineAct">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffff">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+
+        >
+        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#dcdbdb"
+    android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center"
+            android:id="@+id/ll1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="380dp"
+                android:src="@drawable/kitchentop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:text="Kitchen"
+                />
+
+
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="350dp"
+    android:src="@drawable/baricon"
+    android:tint="#f53a3a"
+    android:id="@+id/bottleglass1"/>
+        </LinearLayout>
+</LinearLayout>
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/bartandervitualwinetabs"
+
+
+
+
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            android:background="#F4D03F"
+            app:tabBackground="@drawable/tab_background"
+            android:layout_centerHorizontal="true"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabMode="fixed"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:tabIndicatorColor="@color/white"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/bartandervitualwineviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</LinearLayout>
+</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

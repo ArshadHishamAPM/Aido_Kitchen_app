@@ -8,16 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-        <!-- Base application theme. -->
-        <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
-            <item name="colorPrimary">@color/background</item>
-            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-            <item name="colorAccent">@color/colorAccent</item>
-        </style>
-
-
-
-
-
-
 </resources>
